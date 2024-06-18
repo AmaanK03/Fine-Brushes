@@ -1,0 +1,179 @@
+*, *::before, *::after {
+  font-family: "Open Sans", sans-serif;
+  height: v;
+  padding: 0;
+}
+
+
+.card {
+
+  background-color: white;
+  border-radius: .25rem;
+  padding: 1rem;
+  border: none ;
+}
+
+.card-header {
+  font-size: 1.5rem;
+  margin: .5rem;
+}
+
+.card-body {
+
+  font-size:  .9rem ;
+}
+
+.card-footer {
+  margin-top: 1rem;
+
+}
+
+
+
+.btn {
+  background-color: dodgerblue;
+  color: white;
+  padding: .5em .75em;
+  font-size: 1rem;
+  border: none;
+  border-radius: .25em;
+  cursor: pointer;
+}
+
+.btn:hover, .btn:focus {
+  background-color: #389dff;
+}
+
+.btn.btn-outline {
+  background-color: white;
+  border: 1px solid dodgerblue;
+  color: dodgerblue;
+}
+
+.btn.btn-outline:hover,
+.btn.btn-outline:focus {
+  background-color: #6bb6ff;
+  color: white;
+}
+
+
+.btn + .btn {
+
+  margin-left: .25rem;
+}
+
+/* Parent container is used to house the child divs (cards)*/
+.card-grid {
+  display: grid;  /* enables a grid layout in the box*/
+  grid-template-columns:  /* Defines the columns */
+  repeat(        /* Repeats the Grid pattern */     
+    auto-fit,     /* Automatically fits as much of columns as possible without overflowing*/
+    minmax(300px, 1fr) /* Ensures each column is at least 300px wide but can grow to fill available space equally.*/
+  ); 
+  gap: 10rem; /* creates the gap between the cards (divs) */
+  align-items: flex-start;
+  padding: 5rem;
+}
+
+
+h1 {
+  text-align: center;
+}
+
+.card-header.cart-image {
+  overflow: hidden;   /*  images doesnt overflow it container , and fits it to frame  */
+
+
+}
+
+
+.card-header.cart-image > img {
+display: block;
+width: 100%;
+aspect-ratio: 16 / 9;
+object-fit: cover;
+max-height: 200px;
+object-position: center;
+transition: 200ms transform ease-in-out;
+
+}
+
+
+.card:hover > .card-header.cart-image > img {
+
+  transform: scale(1.025);
+}
+
+
+
+
+
+.card-grid {
+
+background-image: url(/images/watercolour.jpg);
+
+}
+
+
+main {
+  background-image: url(/images/watercolour.jpg);
+}
+ 
+.footer-bottom {
+  background-color: dodgerblue;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+  padding: .5rem .5rem;
+  font-size: 1.5rem;
+}
+
+
+
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 20px;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.nav-links a:hover {
+  color: #ddd;
+}
+
+
+.logo {
+
+  color: white;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+  padding: .5rem .5rem;
+  font-size: 1.5rem;
+
+}
